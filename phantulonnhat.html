@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim phan tu lon nhat</title>
+</head>
+<body>
+    <script>
+        let numbers = [-3, 5, 1, 3, 2, 10];
+        //tạo mảng numbers
+        let max = numbers[0];
+        // giả sử max(giá trị đầu tiên của mảng numbers) là giá trị lớn nhất
+        let index = 0;
+        // đặt index là vị trí của giá trị lớn nhất trong mảng numbers
+        // vòng lặp for chạy từ giá trị đầu tiên đến giá trị cuối (= numbers.length)
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > max) {
+                //lần lượt so sánh từng phần tử với max
+                max = numbers[i];
+                //nếu phần tử lớn hơn giá trị max thì gán giá trị đó cho max
+                index = i;
+                // thứ tự phần tử = giá trị i
+            }
+        }
+        alert('Giá trị lớn nhất trong mảng là: ' + max + ' '+'được tìm thấy ở vị trí: ' + index);
+    </script>
+</body>
+</html>
